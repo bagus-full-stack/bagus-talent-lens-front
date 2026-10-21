@@ -1,0 +1,40 @@
+name: TalentLens CI
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  quality-check:
+    name: Typecheck, Lint, Test & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Typecheck (Strict TypeScript)
+        run: npm run typecheck
+
+      - name: Lint Codebase (ESLint)
+        run: npm run lint
+
+      - name: Run Unit Tests (Vitest)
+        run: npm run test
+
+      - name: Build Application (Next.js App Router)
+        run: npm run build
+        env:
+          DATA_SOURCE: mock
+          NEXT_PUBLIC_BLIND_MODE_DEFAULT: "true"

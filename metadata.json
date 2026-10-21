@@ -1,0 +1,6 @@
+{
+  "name": "TalentLens - ATS B2B Éthique & Recrutement Impartial",
+  "description": "ATS B2B multi-organisations dédié aux cabinets de recrutement avec mode aveugle natif, conformité RGPD stricte et matching explicable.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

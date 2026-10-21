@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name": "TalentLens",
+    "tagline": "Plateforme éthique & Décision impartiale",
+    "badge_version": "v3.4 PRO",
+    "blind_mode_active": "MODE AVEUGLE ACTIF (PII CAVIARDÉES)",
+    "blind_mode_description": "Données personnelles (noms, emails, coordonnées, photos, âges) caviardées selon le protocole Art. 22 & 25 RGPD pour éliminer les biais cognitifs.",
+    "anti_bias_protocol": "Protocole Anti-Biais Actif",
+    "soc2_certified": "Certifié SOC-2 Type II & RGPD",
+    "sovereignty_guarantee": "Hébergement Cloud Souverain UE (Paris) · Zéro fuite de données"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "folders": "Dossiers de recrutement",
+    "candidates_search": "Recherche sémantique",
+    "matching": "Matching prédictif",
+    "chatbot": "Assistant IA (RAG)",
+    "cartography": "Cartographie des talents",
+    "pipeline": "Pipeline de recrutement",
+    "shortlists": "Shortlists de présélection",
+    "users": "Gestion des utilisateurs & Rôles",
+    "rgpd": "Registre RGPD & Droits",
+    "audit": "Journal d'audit immuable",
+    "settings": "Paramètres d'organisation"
+  },
+  "roles": {
+    "owner": "Propriétaire",
+    "admin": "Administrateur",
+    "recruiter": "Recruteur",
+    "dpo": "Délégué Protection Données (DPO)",
+    "viewer": "Lecteur"
+  },
+  "security": {
+    "unmask_title": "Élévation de privilèges · Levée du mode aveugle",
+    "unmask_warning": "Cette action est sensible. Pour continuer, justifiez votre motif professionnel (Art. 30 RGPD) et validez votre code de double authentification (2FA).",
+    "unmask_audit_notice": "Cette action sera scellée de manière immuable avec horodatage RFC 3161 dans le registre WORM.",
+    "mfa_code_label": "Code de sécurité à 6 chiffres (TOTP / Clé FIDO2)",
+    "justification_label": "Motif professionnel justifiant la levée d'anonymat",
+    "justification_placeholder": "Ex : Entretien RH final planifié le 14/10/2026 avec le client",
+    "confirm_and_seal": "Confirmer et sceller dans le journal d'audit",
+    "cancel": "Annuler"
+  },
+  "states": {
+    "loading": "Chargement des données souveraines...",
+    "empty": "Aucun résultat trouvé dans ce vivier",
+    "error": "Une erreur de conformité ou de chargement est survenue",
+    "success": "Opération validée et consignée"
+  }
+}
